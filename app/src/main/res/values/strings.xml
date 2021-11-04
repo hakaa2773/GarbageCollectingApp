@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GarbageCollectingApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nav_open" />
+    <string name="nav_close" />
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>

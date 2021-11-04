@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".LoginActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:text="Staff Login"
+            android:textColor="@color/black"
+            android:textSize="50dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:hint="email"
+            android:id="@+id/txtemail"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/math_bg"
+            android:textColor="@color/white"
+            android:textSize="25dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtemail"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:id="@+id/txtpassword"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/math_bg"
+            android:textColor="@color/white"
+            android:textSize="25dp"/>
+
+        <Button
+            android:id="@+id/btnlogin"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtpassword"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="84dp"
+            android:layout_marginRight="81dp"
+            android:text="Login"
+            android:backgroundTint="@color/black"/>
+
+
+        <Button
+            android:id="@+id/btncacel"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnlogin"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="265dp"
+            android:text="Cancel"
+            android:backgroundTint="@color/black"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/admin_nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Admin Home" />
+        <item
+            android:id="@+id/admin_nav_driver"
+            android:icon="@drawable/ic_baseline_account_circle_24"
+            android:title="Driver Register" />
+
+
+    </group>
+
+</menu>

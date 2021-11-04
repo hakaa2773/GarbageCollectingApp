@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DriverRegisterActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Driver Register"
+        android:textSize="40dp"
+        android:id="@+id/driver_link"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/driver_link"
+        android:id="@+id/txtName"
+        android:hint="Driver Name"
+        android:background="@drawable/math_bg"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/txtName"
+        android:id="@+id/txtphone"
+        android:hint=" Diver Phone number"
+        android:background="@drawable/math_bg"
+        android:textColor="@color/white"
+        android:textSize="25dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/txtphone"
+        android:id="@+id/txtemail"
+        android:hint="Diver Email"
+        android:background="@drawable/math_bg"
+        android:textColor="@color/white"
+        android:textSize="25dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/txtemail"
+        android:id="@+id/txttrucknumber"
+        android:hint="Truck Number"
+        android:background="@drawable/math_bg"
+        android:textColor="@color/white"
+        android:textSize="25dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/txttrucknumber"
+        android:id="@+id/txtpassword"
+        android:hint="Driver password"
+        android:inputType="textPassword"
+        android:background="@drawable/math_bg"
+        android:textColor="@color/white"
+        android:textSize="25dp"/>
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btndriverregister"
+        android:layout_marginTop="15dp"
+        android:text="Driver Register"
+        android:layout_below="@+id/txtpassword"
+        android:backgroundTint="@color/black"/>
+
+    <Button
+        android:id="@+id/btncaceld"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btndriverregister"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="135dp"
+        android:text="Cancel"
+        android:backgroundTint="@color/black"/>
+
+
+
+
+</LinearLayout>
