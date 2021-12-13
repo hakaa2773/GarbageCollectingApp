@@ -6,9 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".DriverActivity">
 
-    <TextView
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:text="driver home"/>-->
+
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="driver home"/>
+        android:id="@+id/driver_page_frame_layout"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

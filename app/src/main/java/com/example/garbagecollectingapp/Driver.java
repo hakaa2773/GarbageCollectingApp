@@ -9,9 +9,6 @@ public class Driver {
     private String driverpassword;
     private String role;
 
-    public Driver() {
-    }
-
     public Driver(String driverid, String drivername, String driverphone, String driveremail, String trucknumber, String role) {
         this.driverid = driverid;
         this.drivername = drivername;

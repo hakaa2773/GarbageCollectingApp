@@ -93,7 +93,9 @@ public class LoginActivity extends AppCompatActivity  {
                            if (snapshot.exists()) {
                                String role = snapshot.child(d_id).child("role").getValue().toString();
                                if (role.equals("driver")){
-                                   startActivity(new Intent(LoginActivity.this,DriverActivity.class));
+                                   Intent intent = new Intent(LoginActivity.this,DriverActivity.class);
+                                   intent.putExtra("driver_id", d_id);
+                                   startActivity(intent);
                                }
                            }
 

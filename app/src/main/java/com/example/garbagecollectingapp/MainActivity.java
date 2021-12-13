@@ -10,7 +10,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Context;
 import android.content.Intent;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -23,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private FragmentTransaction frag_tra;
     private DrawerLayout drawerLayout;
     private Toolbar toolbar;
-
+    LocationManager locationManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,9 +34,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         nav = findViewById(R.id.navview);
         drawerLayout = findViewById(R.id.navdrawer);
         nav.bringToFront();
-
+        locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         //Initialize fragment
-        Fragment fragment = new MapFragment();
+        Fragment fragment = new MapFragment(locationManager);
 
         //open fragment
         getSupportFragmentManager()
@@ -70,7 +72,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.nav_map:
 
-                loadFragment(new MapFragment());
+                loadFragment(new MapFragment(locationManager));
                 break;
             case R.id.nav_search:
                 loadFragment(new SearchFragment());

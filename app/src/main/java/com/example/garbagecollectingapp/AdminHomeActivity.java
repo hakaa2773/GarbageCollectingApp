@@ -35,13 +35,13 @@ public class AdminHomeActivity extends AppCompatActivity implements NavigationVi
 
 
         //Initialize fragment
-        Fragment fragment = new AdminMapFragment();
+        //Fragment fragment = new AdminMapFragment();
 
         //open fragment
-        getSupportFragmentManager()
-                .beginTransaction()
-                .replace(R.id.frame_layout,fragment)
-                .commit();
+        //getSupportFragmentManager()
+        //        .beginTransaction()
+        //       .replace(R.id.frame_layout,fragment)
+        //       .commit();
 
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.nav_open, R.string.nav_close);
