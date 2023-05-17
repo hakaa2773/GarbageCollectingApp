@@ -14,17 +14,26 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/heading"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="50dp"
             android:layout_marginBottom="50dp"
             android:gravity="center"
             android:text="User Login"
             android:textColor="@color/black"
-            android:textSize="50dp" />
+            android:textSize="50dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_below="@+id/heading"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/logo" />
 
         <EditText
             android:layout_width="match_parent"
@@ -33,21 +42,19 @@
             android:hint="email"
             android:id="@+id/txtemailu"
             android:layout_marginTop="20dp"
-            android:background="@drawable/math_bg"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="25dp"/>
 
         <EditText
+            android:id="@+id/txtpasswordu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/txtemailu"
+            android:layout_marginTop="20dp"
             android:hint="password"
             android:inputType="textPassword"
-            android:id="@+id/txtpasswordu"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/math_bg"
-            android:textColor="@color/white"
-            android:textSize="25dp"/>
+            android:textColor="@color/black"
+            android:textSize="25dp" />
 
         <Button
             android:id="@+id/btnloginu"
@@ -55,10 +62,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/txtpasswordu"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="84dp"
             android:layout_marginRight="81dp"
-            android:text="Login"
-            android:backgroundTint="@color/black"/>
+            android:backgroundTint="@color/black"
+            android:text="Login" />
 
         <TextView
             android:layout_width="wrap_content"

@@ -4,8 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ProfileFragment"
+    android:layout_marginTop="50dp"
     android:orientation="vertical"
-    android:background="@drawable/background">
+    android:background="@color/light_gray">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
@@ -21,6 +22,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:orientation="horizontal"
         android:weightSum="10"
         android:gravity="left"
@@ -36,7 +38,6 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/math_bg"
             android:textColor="@color/white"
             android:textSize="25dp"
             android:id="@+id/pro_name"
@@ -49,6 +50,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:orientation="horizontal"
         android:weightSum="10"
         android:gravity="left"
@@ -64,7 +66,6 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/math_bg"
             android:textColor="@color/white"
             android:textSize="25dp"
             android:id="@+id/pro_phone"
@@ -77,6 +78,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:orientation="horizontal"
         android:weightSum="10"
         android:gravity="left"
@@ -92,7 +94,6 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/math_bg"
             android:textColor="@color/white"
             android:textSize="25dp"
             android:id="@+id/pro_Email"
@@ -105,6 +106,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:orientation="horizontal"
         android:weightSum="10"
         android:gravity="left"
@@ -120,7 +122,6 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/math_bg"
             android:textColor="@color/white"
             android:textSize="25dp"
             android:id="@+id/pro_address"
@@ -133,6 +134,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:orientation="horizontal"
         android:weightSum="10"
         android:gravity="left"
@@ -148,7 +150,6 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/math_bg"
             android:textColor="@color/white"
             android:textSize="25dp"
             android:id="@+id/pro_district"

@@ -9,6 +9,14 @@
             android:id="@+id/admin_nav_driver"
             android:icon="@drawable/ic_baseline_account_circle_24"
             android:title="Driver Register" />
+        <item
+            android:id="@+id/admin_map"
+            android:icon="@drawable/ic_baseline_map_24"
+            android:title="Admin Map" />
+        <item
+            android:id="@+id/nav_Signout"
+            android:icon="@drawable/ic_baseline_arrow_back_24"
+            android:title="Signout" />
 
 
     </group>

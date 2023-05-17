@@ -10,5 +10,9 @@
     <color name="gray_dark">#ccc</color>
     <color name="light_gray">#fcba03</color>
     <color name="blue">#00bfff</color>
+    <color name="purple">#e303fc</color>
+    <color name="darkyellow">#fca503</color>
+    <color name="green"> #52fc03</color>
+    <color name="yellow">#ebe834</color>
 
 </resources>

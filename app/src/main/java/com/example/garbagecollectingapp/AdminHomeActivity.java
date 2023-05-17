@@ -9,7 +9,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Context;
 import android.content.Intent;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -24,6 +26,7 @@ public class AdminHomeActivity extends AppCompatActivity implements NavigationVi
     private FragmentTransaction frag_tra;
     private DrawerLayout drawerLayout;
     private Toolbar toolbar;
+    LocationManager locationManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +35,9 @@ public class AdminHomeActivity extends AppCompatActivity implements NavigationVi
         nav = findViewById(R.id.adminnavview);
         drawerLayout = findViewById(R.id.adminnavdrawer);
         nav.bringToFront();
+
+        locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        Fragment fragment = new MapFragment(locationManager);
 
 
         //Initialize fragment
@@ -72,6 +78,12 @@ public class AdminHomeActivity extends AppCompatActivity implements NavigationVi
                 Intent int_reg = new Intent(AdminHomeActivity.this,DriverRegisterActivity.class);
                 startActivity(int_reg);
                 finish();
+                break;
+            case R.id.admin_map:
+                loadFragment(new MapFragment(locationManager));
+                break;
+            case R.id.nav_Signout:
+                startActivity(new Intent(AdminHomeActivity.this, StartActivity.class));
                 break;
 
         }

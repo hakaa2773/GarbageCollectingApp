@@ -4,84 +4,121 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@color/light_gray"
     tools:context=".StartActivity">
     <RelativeLayout
         android:id="@+id/relative_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
 
-        <TextView
+        <ImageView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:gravity="center"
-            android:text="Kandy Municipal Council"
-            android:textSize="50dp"
-            android:layout_margin="50dp"/>
+            android:layout_height="240dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/logo" />
 
-        <LinearLayout
-            android:id="@+id/staff"
-            android:layout_width="350dp"
-            android:layout_height="100dp"
-            android:layout_below="@+id/textView4"
-            android:layout_gravity="center"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/yellow"
-            android:orientation="horizontal"
-            android:padding="3dp">
 
-            <TextView
-                android:layout_width="wrap_content"
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView4">
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="10dp"
-                android:text="Staff Members"
-                android:textColor="@color/white"
-                android:textSize="23sp"
-                android:textStyle="bold" />
+                android:orientation="vertical"
+                android:layout_marginTop="5dp">
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/meth_bg"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/staff"
+                    android:padding="3dp"
+                    android:layout_gravity="center">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Staff Members"
+                            android:textStyle="bold"
+                            android:textSize="23sp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="15dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Login For Staff Members"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:padding="8dp"
+                        android:src="@drawable/driverimg"
+                        android:layout_marginLeft="10dp"/>
 
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="90dp"
-                android:layout_marginLeft="50dp"
-                android:padding="8dp"
-                android:src="@drawable/staff" />
+                </LinearLayout>
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="350dp"
-            android:layout_below="@+id/staff"
-            android:layout_height="100dp"
-            android:orientation="horizontal"
-            android:background="@drawable/yellow"
-            android:layout_marginTop="30dp"
-            android:padding="3dp"
-            android:layout_marginLeft="30dp"
-            android:layout_gravity="center"
-            android:id="@+id/user">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="10dp"
-                android:text="User"
-                android:textColor="@color/white"
-                android:textSize="23sp"
-                android:textStyle="bold"/>
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="90dp"
-                android:padding="8dp"
-                android:src="@drawable/user"
-                android:layout_marginLeft="153dp"/>
 
-        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/meth_bg2"
+                    android:id="@+id/user"
+                    android:layout_marginTop="30dp"
+                    android:padding="3dp"
+                    android:layout_gravity="center">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Users"
+                            android:textStyle="bold"
+                            android:textSize="23sp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="15dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Login For The Users"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:padding="8dp"
+                        android:src="@drawable/users"
+                        android:layout_marginLeft="10dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
 
     </RelativeLayout>
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

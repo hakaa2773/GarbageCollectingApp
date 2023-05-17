@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@color/light_gray"
     tools:context=".LoginActivity">
 
 
@@ -14,28 +14,36 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/heading"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="50dp"
             android:layout_marginBottom="50dp"
             android:gravity="center"
             android:text="Staff Login"
             android:textColor="@color/black"
-            android:textSize="50dp" />
+            android:textSize="50dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_below="@+id/heading"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/logo" />
 
         <EditText
+            android:id="@+id/txtemail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView4"
-            android:hint="email"
-            android:id="@+id/txtemail"
             android:layout_marginTop="20dp"
-            android:background="@drawable/math_bg"
-            android:textColor="@color/white"
-            android:textSize="25dp"/>
+            android:hint="email"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
 
         <EditText
             android:layout_width="match_parent"
@@ -45,8 +53,7 @@
             android:inputType="textPassword"
             android:id="@+id/txtpassword"
             android:layout_marginTop="20dp"
-            android:background="@drawable/math_bg"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="25dp"/>
 
         <Button
@@ -55,10 +62,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/txtpassword"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="84dp"
             android:layout_marginRight="81dp"
-            android:text="Login"
-            android:backgroundTint="@color/black"/>
+            android:backgroundTint="@color/black"
+            android:text="Login" />
 
 
         <Button

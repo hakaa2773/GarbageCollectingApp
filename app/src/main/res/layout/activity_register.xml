@@ -23,7 +23,6 @@
         android:layout_below="@+id/tvlink"
         android:id="@+id/txtName"
         android:hint="First Name"
-        android:background="@drawable/math_bg"
         android:textColor="@color/white"
         android:textSize="25dp" />
 
@@ -34,7 +33,6 @@
         android:layout_below="@+id/txtName"
         android:id="@+id/txtphone"
         android:hint="Phone number"
-        android:background="@drawable/math_bg"
         android:textColor="@color/white"
         android:textSize="25dp"/>
 
@@ -45,7 +43,6 @@
         android:layout_below="@+id/txtphone"
         android:id="@+id/txtemail"
         android:hint="email"
-        android:background="@drawable/math_bg"
         android:textColor="@color/white"
         android:textSize="25dp"/>
 
@@ -57,7 +54,6 @@
         android:id="@+id/txtpassword"
         android:hint="password"
         android:inputType="textPassword"
-        android:background="@drawable/math_bg"
         android:textColor="@color/white"
         android:textSize="25dp"/>
 

@@ -23,7 +23,6 @@
         android:layout_below="@+id/driver_link"
         android:id="@+id/txtName"
         android:hint="Driver Name"
-        android:background="@drawable/math_bg"
         android:textColor="@color/white"
         android:textSize="25dp" />
 
@@ -34,7 +33,6 @@
         android:layout_below="@+id/txtName"
         android:id="@+id/txtphone"
         android:hint=" Diver Phone number"
-        android:background="@drawable/math_bg"
         android:textColor="@color/white"
         android:textSize="25dp"/>
 
@@ -45,7 +43,6 @@
         android:layout_below="@+id/txtphone"
         android:id="@+id/txtemail"
         android:hint="Diver Email"
-        android:background="@drawable/math_bg"
         android:textColor="@color/white"
         android:textSize="25dp"/>
 
@@ -56,7 +53,6 @@
         android:layout_below="@+id/txtemail"
         android:id="@+id/txttrucknumber"
         android:hint="Truck Number"
-        android:background="@drawable/math_bg"
         android:textColor="@color/white"
         android:textSize="25dp"/>
 
@@ -68,7 +64,6 @@
         android:id="@+id/txtpassword"
         android:hint="Driver password"
         android:inputType="textPassword"
-        android:background="@drawable/math_bg"
         android:textColor="@color/white"
         android:textSize="25dp"/>
 
